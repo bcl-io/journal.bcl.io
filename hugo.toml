@@ -1,0 +1,29 @@
+baseURL = 'https://journal.bcl.io/'
+languageCode = 'en-US'
+title = 'Codec'
+capitalizeListTitles = false
+pluralizeListTitles = false
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

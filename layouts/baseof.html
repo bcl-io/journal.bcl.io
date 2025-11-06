@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Codec {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ with resources.Get "/css/main.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{ with resources.Get "/css/default.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{ with resources.Get "/css/prism.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{ with resources.Get "/js/prism.js" }}<script type="text/javascript" src="{{ .RelPermalink }}"></script>{{ end }}
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<div id="description">
+  <a href="https://bcl.org/">Biological Computer Laboratory</a>
+  <a href="https://bcl.org/">BCL</a>
+  <a href="https://recherche.bcl.org/">RECHERCHE</a>
+  <a href="https://apparat.bcl.org/">APPARAT</a>
+  <a href="https://codec.bcl.org/">CODEC</a>
+  <a href="https://journal.bcl.org/" class="underline">JOURNAL</a>
+</div>
+<div id="title">
+<!--
+<form method="get" id="searchform" action="">
+<input type="text" value="Recherche" name="s" id="searchinput" onfocus="if (this.value == 'Recherche') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Recherche';}" /><input type="submit" id="searchsubmit" value="↩" />
+</form>
+-->
+  JOURNAL
+</div>
+
+</div>
+
+<hr />
+
+<div id="content" class="narrowcolumn">
+{{- block "main" . }}{{ end -}}
+</div>{{ "<!-- END Content -->" | safeHTML }}
+
+{{ partial "sidebar" . }}
+{{ partial "footer" . }}

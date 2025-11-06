@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ range site.RegularPages }}
+  {{- $nr := .File.BaseFileName -}}
+  {{- if eq .File.BaseFileName "index" -}}
+    {{- $nr = path.Base .File.Dir -}}
+  {{- end }}
+  <div class="post" id="{{ $nr }}">
+    <h2><span class="gray id">{{ $nr }}</span><a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a></h2>
+<div class="entry">
+{{ .Content -}}
+</div>
+    <div class="tags">
+{{- range (.GetTerms "tags") }}
+      <a href="{{ .RelPermalink }}">{{ .Data.Term }}</a><!-- .LinkTitle is getting auto-capitalized -->
+{{- end }}
+    </div>
+  </div>
+  {{ end }}
+{{ end }}
