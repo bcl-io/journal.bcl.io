@@ -21,10 +21,9 @@
   <a href="https://recherche.bcl.io/">RECHERCHE</a>
   <a href="https://apparat.bcl.io/">APPARAT</a>
   <a href="https://codec.bcl.io/">CODEC</a>
-  <a href="https://journal.bcl.io/" class="underline">JOURNAL</a>
+  <a href="https://journal.bcl.io/" class="underline italic">JOURNAL</a>
 </div>
-<div id="title">
-<!--
+<div id="title"><!--
 <form method="get" id="searchform" action="">
 <input type="text" value="Recherche" name="s" id="searchinput" onfocus="if (this.value == 'Recherche') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Recherche';}" /><input type="submit" id="searchsubmit" value="↩" />
 </form>
@@ -36,9 +35,12 @@
 
 <hr />
 
-<div id="content" class="narrowcolumn">
+<div id="grid">
+<div id="content">
 {{- block "main" . }}{{ end -}}
 </div>{{ "<!-- END Content -->" | safeHTML }}
 
 {{ partial "sidebar" . }}
+</div><!-- END Grid -->
+
 {{ partial "footer" . }}
