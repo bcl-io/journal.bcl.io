@@ -1,0 +1,10 @@
+{{- $src := .Get "src" -}}
+{{- $width := .Get "width" -}}
+{{- $image := .Page.Resources.Get $src -}}
+
+{{- if $image -}}
+  {{- $resized := $image.Resize $width -}}
+  <img src="{{ $resized.RelPermalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Get "alt" }}">
+{{- else -}}
+  {{ errorf "Image not found: %s" $src }}
+{{- end -}}
