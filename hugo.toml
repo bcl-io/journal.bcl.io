@@ -29,6 +29,7 @@ weight = 30
   tag = 'tags'
 
 # for markdown image resizing: https://tracknut.ca/tech/markdown-image-handling/
+# https://gohugo.io/content-management/markdown-attributes/
 [markup]
   [markup.goldmark]
     [markup.goldmark.parser]
