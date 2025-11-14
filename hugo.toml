@@ -22,8 +22,16 @@ weight = 30
 [module]
   [module.hugoVersion]
     extended = false
-    min = "0.116.0"
+    min = "0.146.0"
 
 [taxonomies]
   category = 'categories'
   tag = 'tags'
+
+# for markdown image resizing: https://tracknut.ca/tech/markdown-image-handling/
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
