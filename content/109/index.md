@@ -10,41 +10,30 @@ draft = false
 
 ### Test Records
 
-![](/109/audio_technica_test_record_front.jpg)
-{width="720"}
+{{< image src="audio_technica_test_record_front.jpg" width="720x">}}
 
-![](/109/audio_technica_test_record_back.jpg)
-{width="720"}
+{{< image src="audio_technica_test_record_back.jpg" width="720x">}}
 
-![](/109/technics_80_audio_inspection_front.jpg)
-{width="720"}
+{{< image src="technics_80_audio_inspection_front.jpg" width="720x">}}
 
-![](/109/technics_80_audio_inspection_back.jpg)
-{width="720"}
+{{< image src="technics_80_audio_inspection_back.jpg" width="720x">}}
 
 
 ### LaserDisc
 
-![](/109/peter_gabriel_ld_front.jpg)
-{width="720"}
+{{< image src="peter_gabriel_ld_front.jpg" width="720x">}}
 
 
 ### VHD (Video High Density)
 
 [VHD?](https://en.wikipedia.org/wiki/Video_High_Density)
 
-![](/109/lecon_particuliere_vhd.jpg)
-{width="720"}
-
-
-
-
+{{< image src="lecon_particuliere_vhd.jpg" width="720x">}}
 
 
 ### GameBoy Pokemon Case
 
-![](/109/gameboy_pokemon_case1.jpg)
-{width="720"}
+{{< image src="gameboy_pokemon_case1.jpg" width="720x">}}
 
-![](/109/gameboy_pokemon_case2.jpg)
-{width="720"}
+
+{{< image src="gameboy_pokemon_case2.jpg" width="720x">}}
