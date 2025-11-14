@@ -150,6 +150,10 @@ acronym, abbr, span.caps {
   padding-left: 1em;
 }
 
+.entry img {
+  width: 100%;
+}
+
 .postmetadata ul, .postmetadata li {
   display: inline;
   list-style-type: none;
