@@ -4,7 +4,7 @@
 
 {{- if $image -}}
   {{- $resized := $image.Resize $width -}}
-  <img src="{{ $resized.RelPermalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Get "alt" }}">
+  <img src="{{ $resized.RelPermalink }}" alt="{{ .Get "alt" }}">
 {{- else -}}
   {{ errorf "Image not found: %s" $src }}
 {{- end -}}
